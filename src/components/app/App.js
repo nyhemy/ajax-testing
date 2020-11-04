@@ -27,7 +27,6 @@ const App = () => {
       setLoading(false);
 
     } else if (response.status >= 400){
-      console.log("oopsie poopsie you did a whoopsie");
       setUsers([]);
       setLoading(false);
       setNotification('Oops something went wrong');
