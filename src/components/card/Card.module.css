@@ -1,0 +1,10 @@
+.card {
+    text-align: center;
+    margin: 3px;
+    box-sizing: content-box;
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    border: solid;
+    background-color: aquamarine;
+}

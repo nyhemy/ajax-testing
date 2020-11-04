@@ -50,7 +50,8 @@ const App = () => {
     <div>{test}</div>
       <button onClick= {getUsersData}>ConsoleTest + setState</button>
       <button onClick= {testUsers}>testUsersState</button>
-      <Card id={1} name="test" image="test"/>
+      <Card id={1} name="nameTest1" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
+      <Card id={2} name="nameTest2" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
     </div>
   );
 }

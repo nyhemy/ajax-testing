@@ -6,10 +6,10 @@ const Card = (props) => {
     const {id, name, image} = props;
 
     return (
-        <div>
-            <div>{id}</div>
+        <div className={styles.card}>
+            <img src={image} alt="card image" width="150" height="75" />
             <div>{name}</div>
-            <div>{image}</div>
+            <div>{id}</div>
         </div>
     );
 }
