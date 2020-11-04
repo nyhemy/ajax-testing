@@ -3,9 +3,14 @@
     margin: 3px;
     box-sizing: content-box;
     width: 200px;
-    height: 100px;
+    height: 175px;
     padding: 30px;
     border: solid;
-    background-color: aquamarine;
+    background-color: rgb(177, 207, 205);
     float: left;
+}
+
+.image {
+    border: solid;
+    background-color: white;
 }
