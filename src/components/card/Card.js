@@ -9,7 +9,7 @@ const Card = (props) => {
         <div className={styles.card}>
             <img className={styles.image} src={image} alt="card image" />
             <div>{name}</div>
-            <div>{id}</div>
+            {/* <div>{id}</div> */}
         </div>
     );
 }
