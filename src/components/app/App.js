@@ -8,7 +8,7 @@ const App = () => {
 
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [test, setTest] = useState("test goes here");
+  // const [test, setTest] = useState("test goes here");
 
   // useEffect(() => {
   //     fetch('https://5fa06868e21bab0016dfd1c6.mockapi.io/UsersRequest')
@@ -44,18 +44,17 @@ const App = () => {
     setLoading(false);
   }
 
-  const testUsers = () => {
-    setTest("wait for it...")
-    setTimeout(() => [setTest(users.length), console.log(users)], 1000);
-  }
+  // const testUsers = () => {
+  //   setTest("wait for it...")
+  //   setTimeout(() => [setTest(users.length), console.log(users)], 1000);
+  // }
 
   return (
     <div>
-      <div>{test}</div>
-
+      {/* <div>{test}</div> */}
       <div>
-        <button onClick= {getUsersData}>ConsoleTest + setState</button>
-        <button onClick= {testUsers}>testUsersState</button>
+        <button onClick= {getUsersData}>populate cards</button>
+        {/* <button onClick= {testUsers}>testUsersState</button> */}
       </div>
 
         {loading ? <img src={loadImg} alt="loading" class={styles.loadImg} /> : users.map((user, index) => <Card id={user.id} name={user.name} image={user.image} key={index} />)}
