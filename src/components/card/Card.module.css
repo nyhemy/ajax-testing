@@ -3,14 +3,20 @@
     margin: 3px;
     box-sizing: content-box;
     width: 200px;
-    height: 175px;
-    padding: 30px;
-    border: solid;
-    background-color: rgb(177, 207, 205);
+    margin: 1%;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
     float: left;
 }
 
 .image {
-    border: solid;
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 7px 7px 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
 }
