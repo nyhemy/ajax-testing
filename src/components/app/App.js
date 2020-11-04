@@ -52,12 +52,12 @@ const App = () => {
   return (
     <div>
       {/* <div>{test}</div> */}
-      <div>
+      <div className={styles.center}>
         <button onClick= {getUsersData}>populate cards</button>
         {/* <button onClick= {testUsers}>testUsersState</button> */}
       </div>
 
-        {loading ? <img src={loadImg} alt="loading" class={styles.loadImg} /> : users.map((user, index) => <Card id={user.id} name={user.name} image={user.image} key={index} />)}
+        {loading ? <img src={loadImg} alt="loading" className={styles.loadImg} /> : users.map((user, index) => <Card id={user.id} name={user.name} image={user.image} key={index} />)}
     </div>
   );
 }

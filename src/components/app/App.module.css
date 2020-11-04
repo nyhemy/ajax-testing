@@ -1,3 +1,7 @@
+.center {
+    text-align: center;
+}
+
 .loadImg {
     display: block;
     margin-left: auto;
