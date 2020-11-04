@@ -7,7 +7,9 @@ const Card = (props) => {
 
     return (
         <div>
-
+            <div>{id}</div>
+            <div>{name}</div>
+            <div>{image}</div>
         </div>
     );
 }
