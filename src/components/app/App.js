@@ -48,10 +48,17 @@ const App = () => {
   return (
     <div>
     <div>{test}</div>
+    <div>
       <button onClick= {getUsersData}>ConsoleTest + setState</button>
       <button onClick= {testUsers}>testUsersState</button>
+    </div>
       <Card id={1} name="nameTest1" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
       <Card id={2} name="nameTest2" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
+      <Card id={3} name="nameTest3" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
+      <Card id={4} name="nameTest4" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
+      <Card id={5} name="nameTest5" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
+      <Card id={6} name="nameTest6" image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1200px-Test-Logo.svg.png"/>
+
     </div>
   );
 }
