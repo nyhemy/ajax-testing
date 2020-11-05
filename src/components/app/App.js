@@ -13,20 +13,27 @@ const App = () => {
   const getUsersData = async () => {
     setNotification("");
     setLoading(true);
-    const response = await fetch('https://5fa06868e21bab0016dfd1c6.mockapi.io/UsersRequest');
-
-    if (response.ok) {
-      const fetchedUsers = await response.json();
-      const userArray = [];
-
-      for (let i = 0; i < fetchedUsers.length; i++) {
-        let user = await fetchedUsers[i]['user' + (i+1)];
-        userArray.push(user);
+    let response;
+    
+    try {
+      response = await fetch('https://5fa06868e21bab0016dfd1c6.mockapi.io/UsersRequest'); // valid API is https://5fa06868e21bab0016dfd1c6.mockapi.io/UsersRequest
+      if (response.ok) {
+        const fetchedUsers = await response.json();
+        const userArray = [];
+  
+        for (let i = 0; i < fetchedUsers.length; i++) {
+          let user = await fetchedUsers[i]['user' + (i+1)];
+          userArray.push(user);
+        }
+        setUsers(userArray);
+        setLoading(false);
+  
+      } else if (response.status >= 400){
+        setUsers([]);
+        setLoading(false);
+        setNotification('Oops something went wrong');
       }
-      setUsers(userArray);
-      setLoading(false);
-
-    } else if (response.status >= 400){
+    } catch(err) {
       setUsers([]);
       setLoading(false);
       setNotification('Oops something went wrong');
