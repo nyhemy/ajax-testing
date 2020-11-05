@@ -14,6 +14,12 @@ const App = () => {
     setNotification("");
     setLoading(true);
     let response;
+
+    const errorReset = () => {
+      setUsers([]);
+      setLoading(false);
+      setNotification('Oops something went wrong');
+    }
     
     try {
       response = await fetch('https://5fa06868e21bab0016dfd1c6.mockapi.io/UsersRequest'); // valid API is https://5fa06868e21bab0016dfd1c6.mockapi.io/UsersRequest
@@ -29,14 +35,10 @@ const App = () => {
         setLoading(false);
   
       } else if (response.status >= 400){
-        setUsers([]);
-        setLoading(false);
-        setNotification('Oops something went wrong');
+        errorReset();
       }
     } catch(err) {
-      setUsers([]);
-      setLoading(false);
-      setNotification('Oops something went wrong');
+      errorReset();
     }
   }
 
